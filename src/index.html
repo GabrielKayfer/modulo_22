@@ -10,13 +10,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="styles/main.scss">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
     <header class="hero">
         <div class="container">
             <img class="hero__logo" src="./images/ebac_logo.svg" alt="EBAC">
             <p class="hero__text">
-                O maior envento de tecnologia do Brasil começa em 10d 12h 20s
+                O maior envento de tecnologia do Brasil começa em <span id="contador"></span>
             </p>
             <div class="infos-bar">
                 <ul class="infos-bar__infos">
@@ -39,20 +40,53 @@
             </div>
         </div>
     </header>
-    <section class="event">
-        <div class="container">
+    <section class="event event--frontend">
+        <div class="container" data-aos="fade-right">
             <div class="event__details">
                 <h2 class="event__details__title">Front-end</h2>
                 <p class="event__details__description">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum aut saepe quisquam magni eaque aliquam nam laboriosam suscipit expedita error? Expedita totam blanditiis architecto ea, fugit soluta non praesentium atque?
+                    Dê vida às interfaces modernas explorando ferramentas, frameworks e padrões que moldam a web atual. No palco de Frontend, você vai mergulhar em tendências como componentização, acessibilidade, performance e animações avançadas. Prepare-se para elevar seu código e seu olhar visual enquanto aprende com especialistas que definem o futuro do desenvolvimento web.
                 </p>
             </div>
             <img class="event__image" src="./images/frontend.png" alt="">
         </div>
     </section>
+    <section class="event event--ux-ui event--image-left">
+        <div class="container"  data-aos="fade-left">
+            <div class="event__details">
+                <h2 class="event__details__title">UI/UX</h2>
+                <p class="event__details__description">
+                    Descubra como criar experiências realmente significativas entendendo comportamento humano, fluxos intuitivos e designs centrados no usuário. Nesta trilha, você encontrará workshops, estudos de caso e técnicas que unem criatividade e estratégia para transformar boas ideias em interfaces memoráveis e funcionais.
+                </p>
+            </div>
+            <img class="event__image" src="./images/ui-ux.png" alt="UX/UI">
+        </div>
+    </section>
+    <section class="event event--data-science">
+        <div class="container"  data-aos="fade-right">
+            <div class="event__details">
+                <h2 class="event__details__title">Data Science</h2>
+                <p class="event__details__description">
+                    Explore o poder da análise, inteligência artificial e machine learning para resolver problemas reais. Nesta categoria, você vai entender desde fundamentos estatísticos até aplicações avançadas, construindo uma visão clara de como transformar grandes volumes de dados em insights que impulsionam produtos e negócios.
+                </p>
+            </div>
+            <img class="event__image" src="./images/data.png" alt="Data science">
+        </div>
+    </section>
+    <section class="event event--backend event--image-left">
+        <div class="container"  data-aos="fade-left">
+            <div class="event__details">
+                <h2 class="event__details__title">Back-end</h2>
+                <p class="event__details__description">
+                    Conheça os bastidores das aplicações robustas: APIs escaláveis, bancos de dados, segurança, microsserviços e boas práticas de arquitetura. Aqui você vai aprender como criar sistemas ágeis, performáticos e preparados para crescer, ouvindo especialistas que moldam o core das maiores plataformas do mercado.
+                </p>
+            </div>
+            <img class="event__image" src="./images/backend.png" alt="Back-end">
+        </div>
+    </section>
 
 
-
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="/src/scripts/main.js"></script>
 </body>
 </html>
